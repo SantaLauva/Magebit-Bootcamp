@@ -1,0 +1,31 @@
+form{
+    width: 30%;
+    position: relative;
+  }
+  
+  input{
+    text-align: center;
+  }
+  
+  form::before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    left: 10%;
+    bottom: calc(100% - 18px);
+  }
+  
+  svg {
+    margin: 10px;
+   }
+  
+  .i {
+    position: relative;
+  }
+  
+  #number-5 {
+    fill: black;
+  }

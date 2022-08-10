@@ -1,0 +1,24 @@
+input{
+    text-align: center;
+  }
+  
+  form {
+    position: relative;
+  }
+  
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .fa-solid {
+    margin: 10px;
+  }
+  
+  .fa-magnifying-glass {
+    position: absolute;
+    margin: 0px;
+    left: 30%;
+    bottom: calc(100% - 18px);
+  }

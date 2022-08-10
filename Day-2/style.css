@@ -1,0 +1,45 @@
+html {
+    background-color: #81B98D;
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.logo strong{
+    color: white;
+    font-size: 26px;
+    margin: 0;
+}
+
+.bar {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar a{
+    text-decoration: none;
+    color: white;
+}
+
+#Home{
+    color: black;
+}
+
+input {
+    height: 36px;
+    font-size: 18px;
+}
+
+button {
+    height: 40px;
+    color: white;
+    background-color: green;
+    border: none;
+    margin: 0 10px;
+}

@@ -1,0 +1,87 @@
+berry {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: rgb(136, 209, 40);
+    border-radius: 50%;
+  }
+  
+  bush {
+    display: inline-block;
+    padding: 20px;
+    background: rgba(172, 255, 47, 0.308);
+    margin: 10px;
+  }
+  
+  branch {
+    display: inline-block;
+    padding: 5px;
+    border-top: 3px solid brown;
+  }
+  
+  branch berry {
+    position: relative;
+    border-top: 3px solid green;
+  }
+  
+  .blueberries berry {
+    background: blueviolet;
+  }
+  
+  .blueberries branch {
+    position: relative;
+    border-top-color: rgb(55, 214, 41);
+  }
+  
+  branch berry::before {
+    position: absolute;
+    content: "|";
+    top: -15px;
+    left: 42%;
+  }
+  
+  .blueberries branch:nth-child(2) berry {
+    background: rgb(88, 22, 150);
+  }
+  
+  .raspberry berry {
+    background: rgb(250, 100, 100);
+  }
+  
+  .extra-berry berry{
+    background-color: navajowhite;
+  }
+
+  .extra-berry berry:nth-child(1){
+    background: yellow;
+  }
+
+  .raspberry berry:nth-child(2n-1){
+    background-color: violet;
+  }
+
+  .raspberry:last-child{
+    background-color: navajowhite;
+  }
+
+  .box berry{
+    margin: 2px;
+  }
+
+
+  .box{
+    width: 160px;
+    /* width: calc(30px *5); */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    border: inset grey;
+  }
+
+  .blueberries:last-child{
+    background-color: navajowhite;
+  }
+
+  .blueberries:last-child branch{ 
+    border-color: green;
+  }
