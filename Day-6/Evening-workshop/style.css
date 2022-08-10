@@ -1,0 +1,38 @@
+.section {
+  position: relative;
+  width: 760px;
+  height: 840px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.winner-message {
+  display: none;
+  width: 100px;
+  height: 100px;
+}
+
+.game-field {
+  display: grid;
+  grid: repeat(9, 80px) / repeat(9, 80px);
+  direction: rtl;
+  gap: 5px;
+}
+
+.square {
+  background: #5A4E7C;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+
+.reset {
+  position: absolute;
+  margin: 20px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 60px;
+  height: 40px;
+}

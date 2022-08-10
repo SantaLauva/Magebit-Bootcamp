@@ -1,0 +1,25 @@
+:root {
+    --size: 25px;
+  }
+  
+  .cell {
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    border: 2px red solid;
+  }
+  
+  .cell.o{
+    background-color: green;
+  }
+  
+  .cell.x{
+    background-color: black;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 290px; /* (25 +(2*2))*10 */
+  }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tik tac toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+<form>
+  <input class="user" type="text" placeholder="user"/>
+  <input class="password" type="password" onblur="hidePass(event)" onfocus="showPass(event)" placeholder="password">
+  <input class="phone" type="number"  onblur="checkPhone(event)"  placeholder="phone"/>
+  <input class="post" type="text" required="true"  minlength="7" oninput="validateZip(event)" placeholder="LV-XXXX"/>
+  <button type="submit">Send</button>
+</form>
+  </div>
+  <script src="script.js"></script>
+</body>

@@ -1,0 +1,24 @@
+.wrapper {
+    border: 2px grey solid;
+    border-radius: 5px;
+  }
+  
+  .submenu.hidden {
+    height: 0px;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .submenu.bounce{
+    height: 300px;
+  }
+  
+  .submenu{
+    height: 100px;
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+    cursor: crosshair;
+    transition: all .5s cubic-bezier(0.55, 0.19, 0.32, 1.27);
+  }
