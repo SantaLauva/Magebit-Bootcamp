@@ -1,0 +1,5 @@
+https://flukeout.github.io/
+
+VS Code Best shortcuts to know
+Ctrl+Shift+P, F1 //Opens menu with all options
+Ctrl+Shift+I // Formats the document

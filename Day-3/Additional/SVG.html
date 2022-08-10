@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        background: #98aa2f;
+      }
+      svg.icon {
+        font-size: 20px;
+        padding-right: 2em;
+      }
+
+      .logo .text-el {
+        fill: #03aa03;
+        left: 20px;
+      }
+      .logo .rect-el {
+        fill: #4e4957;
+        transition: transform 2s;
+      }
+
+      .logo:hover .text-el {
+        fill: #bd4242;
+      }
+      .logo:hover .rect-el {
+        fill: #26b98d;
+        stroke: #202057;
+        transform: scale(0.8) translateX(6px) translateY(6px);
+        transition: transform 2s;
+      }
+
+      .icon {
+        width: 22px;
+      }
+      .defs_ig {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="defs_ig" xmlns="http://www.w3.org/2000/svg">
+      <g id="home">
+        <path
+          d="M21.2126 22H13.8863C13.5033 22 13.1681 21.6795 13.1681 21.3132V15.6816C13.1681 14.4912 12.2104 13.5754 10.9654 13.5754C9.72044 13.5754 8.76276 14.4912 8.76276 15.6816V21.3132C8.76276 21.6795 8.42757 22 8.0445 22H0.718259C0.335187 22 0 21.6795 0 21.3132V10.5536C0 10.3704 0.0957678 10.1873 0.191536 10.0499L10.4866 0.206035C10.7739 -0.0686785 11.2048 -0.0686785 11.4921 0.206035L21.7872 10.0499C21.9787 10.2331 22.0745 10.5536 21.9308 10.7825C21.9308 10.8283 21.883 10.8283 21.883 10.8741V21.3132C21.9308 21.6795 21.5956 22 21.2126 22ZM14.6046 20.6264H20.4943V10.7367L11.0133 1.67118L1.43652 10.8283V20.6264H7.32624V15.6816C7.32624 13.7128 8.90641 12.2019 10.9654 12.2019C13.0244 12.2019 14.6046 13.7128 14.6046 15.6816V20.6264Z"
+          fill="#262626"
+        />
+      </g>
+    </svg>
+    <p>text</p>
+    <div style="font-size: 10px;">
+      <p style="font-size: 1.6em;">text</p>
+    </div>
+    <svg
+      viewBox="0 0 18 18"
+      class="icon shape-codepen"
+      style="width: 6.5em; transform: rotate(-10deg);"
+    >
+      <use
+        xlink:href="defs.svg#shape-instagram-icon"
+        style="fill: #6edfd5; stroke: #202057;"
+      ></use>
+    </svg>
+
+    <svg viewBox="0 0 18 18" class="icon shape-codepen" style="width: 5em;">
+      <use
+        xlink:href="defs.svg#shape-facebook-icon"
+        style="fill: #aa2f81;"
+      ></use>
+    </svg>
+
+    <svg viewBox="0 0 18 18" class="icon shape-codepen" style="width: 4em;">
+      <use
+        xlink:href="defs.svg#shape-twitter-icon"
+        style="fill: #aa372f;"
+      ></use>
+    </svg>
+    <svg viewBox="0 0 18 18" class="icon shape-codepen" style="width: 3.25em;">
+      <use
+        xlink:href="defs.svg#shape-instagram-icon"
+        style="fill: #03aa03;"
+      ></use>
+    </svg>
+
+    <svg
+      class="logo"
+      width="220"
+      height="48"
+      viewBox="0 0 220 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <use class="rect-el" xlink:href="defs.svg#el1"></use>
+      <use class="text-el" xlink:href="defs.svg#callendar-logo"></use>
+    </svg>
+
+    <svg class="icon" viewBox="0 0 22 22">
+      <use xlink:href="#home"></use>
+    </svg>
+
+    <svg class="icon" viewBox="0 0 22 22">
+      <use xlink:href="#home"></use>
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+Morning:
+
+1. export all top navigation icons from instagram design here 
+https://www.figma.com/file/fCcgccgFNVRoICJe9WQFG6/Social-Website-Mockups-Community?is-community-duplicate=1&fuid=833738616841066878
+
+2. Add to new website exported svg icons
+with SVG tag placed directly inside of html
+Explore fill, height and transform style properties for svg elements
+with background for boxes made of html elements
+with img tag
+
+3. same icons join in a single file and them add those icons to page using <use> tag (See SVG.html)
+
+4. covert svg icons to iconfont using
+https://icomoon.io/
+and then display those icons on webpage
+
+------------------------------------------------------------------
+
+https://svgsprit.es/
+https://codepen.io/jcoulterdesign/pen/NOMeEb
+
+Evening:
+
+https://fonts.google.com/specimen/Square+Peg?query=Square+Peg
+See figma.com
+
+1. Make a page with h1-h6 elements and paragraph
+2. add (onsite) “Square Peg” font for h2-h6
+3. add (onsite) “Cormorant SC” font for h1 element
+4. add one more freely chousen font (onsite) for all the rest elements
