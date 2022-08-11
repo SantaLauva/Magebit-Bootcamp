@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,33 @@
     <title>Facebook Posts</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="post-container">
-        <div class="post">
-            <div class="post-header">
-                <div class="flex">
-                    <img class="profile-picture">
+            <div class="post">
+                <div class="post-header">
+                    <div class="flex">
+                        <img class="profile-picture">
+                    </div>
+                    <div class="flex">
+                        <div class="profile-name"></div>
+                        <div class="post-time"></div>
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="profile-name"></div>
-                    <div class="post-time"></div>
+                <div class="post-content">
+                    <div class="post-text"></div>
+                    <img class="post-image">
                 </div>
             </div>
-            <div class="post-content">
-                <div class="post-text"></div>
-                <img class="post-image">
-            </div>
-        </div>
     </div>
+    <div class="end"></div>
 
     <script>
         let post_text = document.querySelector('.post-text');
         function showPostText(text) {
             post_text.innerHTML = text;
         }
-        
+
         let post_image = document.querySelector('.post-image');
         function showPostImage(src_url) {
             post_image.src = src_url;
@@ -45,8 +48,8 @@
         }
     </script>
 
-    <script src="fetchPostImage.js"></script>
-    <script src="fetchPostText.js"></script>
-    <script src="fetchOtherPostInfo.js"></script>
+    <script src="fetchAPI.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

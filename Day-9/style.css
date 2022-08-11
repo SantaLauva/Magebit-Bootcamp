@@ -2,6 +2,8 @@
     width: 500px;
     height: 635px;
     border: 1px solid black;
+    margin: 10px;
+    display: none;
 }
 
 .post-header {
@@ -34,4 +36,9 @@
 .post-image {
     height: 280px;
     width: 100%;
+}
+
+.end {
+    position:absolute;
+    bottom: 50px;
 }

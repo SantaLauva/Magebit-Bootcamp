@@ -5,9 +5,3 @@ async function fetchAPI(url, callback) {
         callback(response_json);
     }
 }
-
-document.querySelector('.post-text').onclick = function () {
-    fetchAPI('https://meowfacts.herokuapp.com/', function (response) {
-        showPostText(response.data);
-    });
-};
