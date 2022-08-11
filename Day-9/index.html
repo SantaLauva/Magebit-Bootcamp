@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="post-container">
+        <div class="post">
+            <div class="post-header">
+                <div class="flex">
+                    <img class="profile-picture">
+                </div>
+                <div class="flex">
+                    <div class="profile-name"></div>
+                    <div class="post-time"></div>
+                </div>
+            </div>
+            <div class="post-content">
+                <div class="post-text"></div>
+                <img class="post-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let post_text = document.querySelector('.post-text');
+        function showPostText(text) {
+            post_text.innerHTML = text;
+        }
+        
+        let post_image = document.querySelector('.post-image');
+        function showPostImage(src_url) {
+            post_image.src = src_url;
+        }
+
+        let profile_picture = document.querySelector('.profile-picture');
+        let profile_name = document.querySelector('.profile-name');
+        function showOtherInfo(img_src, name) {
+            profile_picture.src = img_src;
+            profile_name.innerHTML = name;
+        }
+    </script>
+
+    <script src="fetchPostImage.js"></script>
+    <script src="fetchPostText.js"></script>
+    <script src="fetchOtherPostInfo.js"></script>
+</body>
+</html>

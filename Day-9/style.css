@@ -1,0 +1,37 @@
+.post {
+    width: 500px;
+    height: 635px;
+    border: 1px solid black;
+}
+
+.post-header {
+    height: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    background: black;
+    width: 40px;
+    height: 40px;
+}
+
+.post-content {
+    height: 375px;
+    width: 100%;
+}
+
+.post-text {
+    height: 90px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.post-image {
+    height: 280px;
+    width: 100%;
+}
