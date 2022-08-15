@@ -10,10 +10,10 @@
 </head>
 <body>
     <h1>My ToDo list</h1>
-    <div class="create-to-do">
-        <input type="text" id="to-do-input" placeholder="write your To Do">
-        <button id="create-to-do">Create</button>
-    </div>
+    <form class="create-to-do" action="api.php">
+        <input type="text" name="new_task" id="to-do-input" placeholder="write your To Do">
+        <button id="create-to-do" type="submit">Create</button>
+    </form>
     <div class="to-do-container">
         <div class="to-do-tasks">
             <h2>To Do</h2>

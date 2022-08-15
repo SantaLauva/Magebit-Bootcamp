@@ -17,12 +17,21 @@ class ToDo {
 
         toDo.appendChild(clone);
     }
+
+    toDoDone() {
+        let toDo = document.querySelector('.done-to-do');
+        let template = document.querySelector('.done-template');
+        let clone = template.content.cloneNode(true);
+        clone.querySelector('.to-do-text').innerHTML = task;
+
+        toDo.appendChild(clone);
+    }
 }
 
 
 let tasks = [];
 
-document.getElementById('create-to-do').onclick = function(event) {
+document.getElementById('create-to-do').onclick = function (event) {
     let inputField = document.getElementById('to-do-input');
     let task = inputField.value;
 
@@ -32,23 +41,11 @@ document.getElementById('create-to-do').onclick = function(event) {
     inputField.value = "";
 }
 
-document.querySelector('.to-do-container').onclick = function(event) {
+document.querySelector('.to-do-container').onclick = function (event) {
     if (event.target.classList.contains('to-do-checkbox')) {
-        
+
         tasks[event.target.dataset.id].done = true;
         console.log(tasks[event.target.dataset.id].done);
     }
-        
+
 }
-
-// function toDoDone() {
-//     let toDo = document.querySelector('.done-to-do');
-//     let template = document.querySelector('.done-template');
-//     let clone = template.content.cloneNode(true);
-//     clone.querySelector('.to-do-text').innerHTML = task;
-    
-//     toDo.appendChild(clone);
-// }
-
-// Jāsalabo toDoDone funkcija.
-//Vajag lai toDoDone padod taska datus
