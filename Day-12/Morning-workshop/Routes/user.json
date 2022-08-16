@@ -1,0 +1,26 @@
+[
+    {
+        "username": "bob",
+        "password": "bob"
+    },
+    {
+        "username": "bob2",
+        "password": "bob2"
+    },
+    {
+        "username": "bob3",
+        "password": "bob3"
+    },
+    {
+        "username": "<script>alert(1)<\/script>",
+        "password": "<script>alert(1)<\/script>"
+    },
+    {
+        "username": "\"This\"",
+        "password": "\"This\""
+    },
+    {
+        "username": "<img src=\"https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Shrek_%28character%29.png\" jsaction=\"load:XAeZkd;\" jsname=\"HiaYvf\" class=\"n3VNCb KAlRDb\" alt=\"Shrek (character) - Wikipedia\" data-noaft=\"1\" style=\"width: 220px; height: 326px; margin: 0px;\">",
+        "password": "<img src=\"https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Shrek_%28character%29.png\" jsaction=\"load:XAeZkd;\" jsname=\"HiaYvf\" class=\"n3VNCb KAlRDb\" alt=\"Shrek (character) - Wikipedia\" data-noaft=\"1\" style=\"width: 220px; height: 326px; margin: 0px;\">"
+    }
+]

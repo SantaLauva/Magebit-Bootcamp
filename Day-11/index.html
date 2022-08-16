@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
-    <h1>My ToDo list</h1>
-    <form class="create-to-do" action="api.php">
-        <input type="text" name="new_task" id="to-do-input" placeholder="write your To Do">
-        <button id="create-to-do" type="submit">Create</button>
-    </form>
-    <div class="to-do-container">
-        <div class="to-do-tasks">
-            <h2>To Do</h2>
-            <template class="to-do-template">
-                <div class="to-do">
-                    <input type="checkbox" class="to-do-checkbox" data-id>
-                    <div class="to-do-text"></div>
-                </div>
-            </template>
-        </div>
-        <div class="done-to-do">
-            <h2>Done</h2>
-            <template class="done-template">
-                <div class="done"></div>
+    <div class="body">
+        <h1>My ToDo list</h1>
+        <form class="create-to-do" action="">
+            <input type="text" name="new_task" id="to-do-input" placeholder="write your To Do">
+            <button id="create-to-do" type="submit">Create</button>
+        </form>
+        <div class="to-do-container">
+            <div class="to-do-tasks">
+                <h2>To Do</h2>
+                <template class="to-do-template">
+                    <div class="to-do">
+                        <input type="checkbox" class="to-do-checkbox" data-id>
+                        <div class="to-do-text"></div>
+                    </div>
+                </template>
+            </div>
+            <div class="done-to-do">
+                <h2>Done</h2>
+                <template class="done-template">
+                    <div class="done"></div>
                     <input type="checkbox" checked class="done-checkbox" data-id>
                     <div class="to-do-text"></div>
-                </div>
-            </template>
+                </template>
+            </div>
         </div>
     </div>
-    <script  src="./script.js"></script>
-    
+
+    <script src="./script.js"></script>
+
 </body>
+
 </html>

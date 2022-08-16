@@ -19,9 +19,16 @@ if (
     is_string($_POST['new_task']) && 
     ($_POST['new_task'] != "")
 ) {
-    $data[] = $_POST['new_task'];
+    $task = [
+        'id' => count($data),
+        'task_text' => $_POST['new_task'],
+        'done' => false
+    ];
+
+    $data[] = $task;
 
     $content = json_encode($data);
+
     file_put_contents(DATA_FILE_NAME, $content);
 
     $output = [
